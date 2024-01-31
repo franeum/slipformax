@@ -1,5 +1,3 @@
-/* slipdec.c 20100513 Martin Peach */
-/* decode a list of SLIP-encoded bytes */
 #include "ext.h"
 #include "ext_obex.h"
 
@@ -19,8 +17,6 @@ t_class *slipdec_class;
 typedef struct _slipdec
 {
     t_object x_obj;
-    //t_outlet *x_slipdec_out;
-    //t_outlet *x_status_out;
     void *p_outlet;
     void *p_outlet1;
     t_atom *x_slip_buf;
